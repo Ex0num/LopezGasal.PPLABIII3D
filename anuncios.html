@@ -7,7 +7,7 @@
 
     <title>Anuncios Disponibles - Pisteando Carros Arg</title>
 
-    <script src="./scripts/anunciosDisponibles.js" type="module" defer></script>
+    <script src="./scripts/app2.js" type="module" defer></script>
     <link href="./css/estilos.css" rel="stylesheet" defer>
     <link href="./assets/logoConsecionariaNegro.jpg" rel="shotcut icon" type="image/x-icon">
 
@@ -33,10 +33,17 @@
         </label>
     </p>
 
-    <p>
+    <div class="spinner" id="divSpinner">
+        <label class="labelForm">Cargando data... Aguarde por favor...</label> 
+        <img id="loader" src="./assets/loaderConsecionaria.gif" alt="Loader de pagina">
+    </div>
+
+    <p id="table-containerAnuncios" hidden>
         <img id="wallpaper-anuncios" src="./assets/wallpaperAuto.jpg" alt="Foto de auto"></a>
         
     </p>
+
+    
      
     <div class="divDespedida">  
         <ul id="lista-despedida">

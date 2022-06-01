@@ -329,6 +329,15 @@ tr:hover
 
 #wallpaper-anuncios
 {
+    /* visibility: hidden; */
     height: 100%;
-    width: 100%;
+    width: 99%;
+    border-radius: 1vw;
+}
+
+.anuncioDisponible
+{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 2vw;
 }
