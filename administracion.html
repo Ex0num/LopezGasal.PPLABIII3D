@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pisteando Carros Arg</title>
+
+    <!-- El atributo 'defer' es para que lo llame una ves que ya se renderizó el html -->
+    <script src="./scripts/app.js" type="module" defer></script>
+    <link href="./css/estilos.css" rel="stylesheet" defer>
+    <link href="./assets/logoConsecionariaNegro.jpg" rel="shotcut icon" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="divBienvenida">  
+        <ul id="lista-bienvenida">
+            <li class="item-lista-bienvenida">Nosotros</li>
+            <li class="item-lista-bienvenida"><a href="administracion.html" target="_self" rel="noopener noreferrer nofollow">Anuncios</a></li>
+            <li class="item-lista-bienvenida">Blog</li>
+            <li class="item-lista-bienvenida">Contacto</li>
+        </ul>
+
+        <a id="logo-principal" href="anuncios.html" target="_self" rel="noopener noreferrer nofollow"> <img class="logoPrincipalImg" src="./assets/logoConsecionariaNegro.jpg" alt="Foto del logo principal"></a>
+        <label class="tituloPrincipal">Pisteando Carros Arg</label> 
+    </div>
+    
+    <section class="form-container">
+        <fieldset class="fieldset-form">
+            <legend class="tituloFieldset-form"> Informacion requerida </legend> 
+            
+            <fieldset class="fieldset2-form">
+                <form>
+                    <label class="labelForm">Título</label> 
+                    <p>
+                        <input id="txtBoxTitulo" class="infoBox" type="text" name="Titulo" placeholder="Ingrese título" autocomplete="off">
+                    </p>
+
+                    <label class="labelForm">Tipo</label> 
+                    <p id="pRadioButtonForm">
+                        <label class="labelForm" id="labelVentaRadioButton">Venta</label>
+                        <input id="radioBtnTipoVenta" class="multipleChoice" type="radio" name="Tipo" value="Venta" checked>
+
+                        <label class="labelForm" id="labelAlquilerRadioButton">Alquiler</label>
+                        <input id="radioBtnTipoAlquiler" class="multipleChoice" type="radio" name="Tipo" value="Alquiler">
+                    </p>
+                    
+                    <label class="labelForm">Descripción</label> 
+                    <p>
+                        <textarea id="txtAreaDescripcion" class="infoBoxDesc" name="Descripcion" maxlength="500"></textarea>
+                    </p>
+                    
+                    <label class="labelForm">Precio</label> 
+                    <p>
+                        <input id="txtBoxPrecio" class="infoBox" type="number" name="Precio" placeholder="Ingrese precio en ARS" autocomplete="off">
+                    </p>
+                    
+                    <label class="labelForm">Puertas</label> 
+                    <p>
+                        <img class="imagenForm" src="./assets/puerta.png" alt="Foto de puerta"></a>
+                        <input id="txtBoxPuertas" class="infoBox" type="number" name="Puertas" placeholder="Ingrese cantidad de puertas" autocomplete="off">
+                    </p>
+           
+                    <label class="labelForm">Kilometros</label> 
+                    <p>
+                        <img class="imagenForm" src="./assets/reloj.png" alt="Foto de reloj"></a>
+                        <input id="txtBoxKilometros" class="infoBox" type="number" name="Kilometros" placeholder="Ingrese cantidad de kilometros" autocomplete="off">
+                    </p>
+                    
+                    <label class="labelForm">Potencia</label> 
+                    <p> 
+                        <img class="imagenForm" src="./assets/motor.png" alt="Foto de motor"></a>
+                        <input id="txtBoxPotencia" class="infoBox" type="number" name="Potencia" placeholder="Ingrese la potencia en HP (Horse-powers)" autocomplete="off">
+                    </p>
+
+                    <img class="imagenForm" src="./assets/guardar.png" alt="Foto de reloj"></a>
+                    <input class="BtnGuardar" type="submit" name="AccionGuardarPublicacion" value="Guardar">
+                </form>
+            </fieldset>
+        </fieldset>
+    </section>
+    
+    <div class="spinner" id="divSpinner">
+        <label class="labelForm">Cargando data... Aguarde por favor...</label> 
+        <img id="loader" src="./assets/loaderConsecionaria.gif" alt="Loader de pagina">
+    </div>
+
+    <section>
+        <fieldset class="fieldset-tabla">
+            
+            <legend class="tituloFieldset-tabla">Anuncios publicados</legend>
+            
+            <fieldset class="fieldset-botones-tabla">
+                <div class="div-botones-tabla">
+                    <input id="BtnEliminar" class="BtnEliminar" type="button" name="AccionEliminarPublicacion" value="Eliminar">
+                    <input id="BtnCancelar" class="BtnCancelar" type="button" name="AccionCancelarPublicacion" value="Cancelar">
+                    <input id="BtnModificar" class="BtnModificar" type="button" name="AccionModificarPublicacion" value="Modificar">
+                </div>
+            </fieldset>
+
+            <div id="table-container" class="table-container" hidden>
+
+            </div>
+        </fieldset>
+    </section>
+    
+    <div class="divDespedida">  
+        <ul id="lista-despedida">
+            <li class="item-lista-bienvenida">Nosotros</li>
+            <li class="item-lista-bienvenida"><a href="administracion.html" target="_self" rel="noopener noreferrer nofollow">Anuncios</a></li>
+            <li class="item-lista-bienvenida">Blog</li>
+            <li class="item-lista-bienvenida">Contacto</li>
+        </ul>
+
+        <p id="parrafo-despedida">
+            Todos los derechos reservados. ©
+        </p>
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
